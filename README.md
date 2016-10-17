@@ -88,4 +88,4 @@ Step 6: Test your bot
 Step 7: Develop your bot
 ---
 
-* Now, you can develop the artificial intelligence of your bot in the function `GetResponse` which return the response the bot should give for an incomming `message` from user `facebookUser`
+* Now, you can develop the artificial intelligence of your bot in the function `GetResponse` in `facebook.go` which return the response the bot should give for an incomming `message` from user `facebookUser`
