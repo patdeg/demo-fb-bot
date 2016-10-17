@@ -219,7 +219,9 @@ func FacebookCallbackPOSTHandler(w http.ResponseWriter, r *http.Request) {
 						log.Debugf(c, "Message Seq: %v", m.Message.Seq)
 						log.Debugf(c, "Message: %v", m.Message.Text)
 
-						err = TreatMessage(c, m.Sender.Id, m.Message.Text)
+						response := GetResponse(c, m.Sender.Id, m.Message.Text)
+
+						err = SendFacebookMessage(c, m.Sender.Id, response)
 						if err != nil {
 							log.Errorf(c, "Error, sending message: %v", err)
 						}
@@ -247,9 +249,9 @@ func FacebookCallbackPOSTHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "")
 }
 
-func TreatMessage(c context.Context, recipientId string, message string) error {
+func GetResponse(c context.Context, recipientId string, message string) string {
 	response := "Hello " + message
-	return SendFacebookMessage(c, recipientId, response)
+	return response
 }
 
 func SendFacebookMessage(c context.Context, recipientId string, message string) error {
