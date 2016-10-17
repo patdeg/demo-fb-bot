@@ -8,7 +8,8 @@ How To Get Started
 more detailed information at https://developers.facebook.com/docs/messenger-platform/quickstart
 
 
-1. Create a Facebook App and Page
+Step 1: Create a Facebook App and Page
+===
 
 * Create a Facebook Page, for example "My Demo Page" (use the Create Page item in the top right dropdown menu)
 
@@ -20,7 +21,8 @@ more detailed information at https://developers.facebook.com/docs/messenger-plat
 
 * Enter name, contact email, and select the Category "Apps for Pages"
 
-2. Create a Page Token
+Step 2: Create a Page Token
+===
 
 * Go to your Developer Dashboard, i.e. browse to https://developers.facebook.com/apps and click on your new app
 
@@ -32,7 +34,8 @@ more detailed information at https://developers.facebook.com/docs/messenger-plat
 
 * Gather your Page Access Token that we will enter in the code in step 4.
 
-3. Setup Webhook
+Step 3: Setup Webhook
+===
 
 * Under Webhooks, click "Setup Webhooks"
 
@@ -44,7 +47,8 @@ more detailed information at https://developers.facebook.com/docs/messenger-plat
 
 * Do NOT click on "Save and Verify" yet. You need to build and deploy your app firt (step 4)
 
-4. Build and deploy your App Engine
+Step 4: Build and deploy your App Engine
+===
 
 * Create a new project on Google Cloud console at https://console.cloud.google.com/home/dashboard by selecting "Create project" in the top left dropdown menu
 
@@ -60,7 +64,8 @@ more detailed information at https://developers.facebook.com/docs/messenger-plat
 
 * Test the application by browsing to your URL https://[project-id].appspot.com
 
-5. Finish setting up your Webhook
+Step 5: Finish setting up your Webhook
+===
 
 * Go back to your Facebook Developer tab where you started your Webhook
 
