@@ -249,7 +249,7 @@ func FacebookCallbackPOSTHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "")
 }
 
-func GetResponse(c context.Context, recipientId string, message string) string {
+func GetResponse(c context.Context, facebookUser string, message string) string {
 	response := "Hello " + message
 	return response
 }

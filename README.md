@@ -85,3 +85,7 @@ Step 6: Test your bot
 
 * Until your submit your bot to Facebook for approval, only selected users can use the app. To add a user, click Roles in the left navigation bar in your Facebook Developer dashboard, then add them as Testers
 
+Step 7: Develop your bot
+---
+
+* Now, you can develop the artificial intelligence of your bot in the function `GetResponse` which return the response the bot should give for an incomming `message` from user `facebookUser`
