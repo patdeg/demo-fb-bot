@@ -1,0 +1,15 @@
+application: facebook-bot-demo
+version: dev
+default_expiration: "10s"
+runtime: go
+api_version: go1
+
+handlers:
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+
+- url: /.*
+  script: _go_app
+  secure: always  
+
